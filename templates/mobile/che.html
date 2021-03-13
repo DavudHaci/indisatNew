@@ -1,9 +1,16 @@
 {% load static %}
 <div class="b-seller segments">
-        <div class="container">
+
+              
+        <div class="container" style="position: relative;">
             <div class="section-title">
                 <h3>Premium Elanlar</h3>
             </div>
+            <!-- preloader -->
+                <div class="preloader">
+                    <div class="spinner"></div>
+                </div>
+            <!-- end preloader -->
             {% for article in pre %}
             <div class="row">
                 {% for art in article %}

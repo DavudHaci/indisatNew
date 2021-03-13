@@ -1,5 +1,6 @@
 {% extends 'mobile/layout.html' %}
-
+{% load socialaccount %}
+{% providers_media_js %}
 {% block body %}
 
 	<!-- sign up -->
@@ -21,13 +22,13 @@
 				<h5>Bunların biri ilə daxil ol</h5>
 				<div class="row">
 					<div class="col s6">
-						<button class="button-full button-facebook">Facebook</button>
+						<a href="{% provider_login_url "facebook" method="oauth2" %}"><button class="button-full button-facebook">Facebook</button></a>
 					</div>
 					<div class="col s6">
-						<button class="button-full button-google">Google</button>
+						<a href="{% provider_login_url "google" %}"><button class="button-full button-google">Google</button></a>
 					</div>
 				</div>
-			
+
 			</div>
 		</div>
 		</div>

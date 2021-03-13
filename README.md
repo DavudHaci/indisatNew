@@ -1,2 +1,1 @@
 IndiSat.az
-# indisatNew
